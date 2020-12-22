@@ -1,0 +1,87 @@
+{
+	"_id":"",
+	"allMajorEvents" :[
+		
+		{	"_id":"event1",
+			"mainEvent":{
+				"eventName": "",
+				"description": "Planning and documentation of initial requirements",
+				"startDate" : "",
+				"dueDate": "",		
+				"summary" : "Planning",
+				"isCreated":"false",
+				"eventOwner":""
+			},
+			
+			"subEvents" : [
+					{
+						"eventName": "",
+                        "description": "Client Meeting and understand the requirements",
+                        "startDate" : "",
+                        "dueDate": "",		
+                        "summary" : "Meetings",
+                        "isCreated":"false",
+						"eventOwner":"",
+						"parent" : {"key":""}																
+					},
+					{
+						"eventName": "",
+                        "description": "underlying requirments and other things",
+                        "startDate" : "",
+                        "dueDate": "",		
+                        "summary" : "Project Kickoff",
+                        "isCreated":"false",
+						"eventOwner":"",
+						"parent" : {"key":""}
+					},
+					{
+						"eventName": "",
+                        "description": "Team finalizations and describe them about event",
+                        "startDate" : "",
+                        "dueDate": "",		
+                        "summary" : "Team creation",
+                        "isCreated":"false",
+						"eventOwner":"",
+						"parent" : {"key":""}						
+					}
+				]
+			
+		},
+		{
+			"_id":"event2",
+			"mainEvent":{
+				"eventName": "",
+                "description": "Sponcers and Partners Meetings",
+                "startDate" : "",
+                "dueDate": "",		
+                "summary" : "Make More Money",
+                "isCreated":"false",
+				"eventOwner":"",
+				"parent" : {"key":""}
+				},
+				"subEvents" : [
+					{
+						"eventName": "",
+                        "description": "Find sponcers and more sponcers",
+                        "startDate" : "",
+                        "dueDate": "",		
+                        "summary" : "Partners",
+                        "isCreated":"false",
+						"eventOwner":"",
+						"parent" : {"key":""}
+					},
+					{
+						"eventName": "",
+                        "description": "Event Day",
+                        "startDate" : "",
+                        "dueDate": "",		
+                        "summary" : "Event Day",
+                        "isCreated":"false",
+						"eventOwner":"",
+						"parent" : {"key":""}
+					}
+				]
+			
+		}
+	]
+}
