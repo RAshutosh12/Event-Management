@@ -12,3 +12,5 @@ It has below functionalities:-
 
 
 Next Version R1.1 to be continue.........
+
+Technologies used: Python, MongoDB, HTML, Bootstrap, JavaScript, flask framework, PyMongo Module, Json.
