@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Event Management Portal</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="static/plugins/fontawesome-free/css/all.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!--Select2-->
+  <link rel="stylesheet" href="static/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="static/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="static/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition layout-top-nav">
+  
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand-md navbar-dark">
+    <div class="container">
+      <a href="/" class="navbar-brand">
+        <span class="brand-text font-weight-light">Event Management Portel</span>
+      </a>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark"> Create Events <small></small></h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- general form elements disabled -->
+            <form role="form" method="POST">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Event Name</label>
+                      <textarea required id="eventName" name="event_name" class="form-control" rows="1" placeholder="Concert..."></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  
+
+                  <div class="col-sm-6">
+                    <!-- textarea -->
+                    <div class="form-group">
+                      <label>Partners & Sponsors.</label>
+                      <select required name="partners_name" id="partnersName" class="form-control" enabled="">
+                        <option value="" >Select Partners/Sponsors</option>
+                       <option value="Dominos">Dominos</option>
+                        <option value="ZARA">ZARA</option>
+                        <option value="Shoopers Stop">Shoopers Stop</option>
+                        <option value="Pizza Hut">Pizza Hut</option>
+                        <option value="Nestle">Self</option> 
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- FFW Date -->
+                    <div class="form-group">
+                      <label>Event Day </label>
+                      <input required name="event_date" type="date" class="form-control" placeholder="Select FFW Date">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Type of Event</label>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-check">
+                              <input id="osu" value="Important/Higher" name="event_type" class="form-check-input" type="radio" name="radio2">
+                              <label class="form-check-label">Important/Higher</label>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-check">
+                              <input id="newl" value="Normal" name="event_type" class="form-check-input" type="radio" name="radio2" checked="">
+                              <label class="form-check-label">Normal</label>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- textarea -->
+                    <div class="form-group">
+                      <label>Team Size</label>
+                      <input type="number" id="teamSize" name="team_size" min="1" max="200">
+                    </div>
+                  </div>
+                </div>
+         
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- User ID -->
+                      <div class="form-group">
+                      <label>Event Owner</label>
+                      <textarea required id="eventOwner" name="event_owner" class="form-control" rows="1" placeholder="abc"></textarea>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Description</label>
+                      <textarea id="desc" name="event_desc" class="form-control" rows="3" placeholder="Enter Project Description"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-footer">
+                <div class="col-sm-3">
+                  <button type="submit" class="btn btn-success" style="background-color:rgb(40,40,40);border: none">Review Events</button>
+                  <a href="/"><button type="button" class="btn btn-default float-right" >Cancel Creation</button> </a>
+                </div>               
+              </div>
+            </form>
+          </div>
+          <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+    </div>
+    <!-- Default to the left -->
+    <strong>R & R</strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="static/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="static/dist/js/adminlte.min.js"></script>
+<!--Select2-->
+<script src="static/plugins/select2/js/select2.full.min.js"></script>
+
+</body>
+</html>
