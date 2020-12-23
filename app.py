@@ -1,22 +1,11 @@
 from flask import Flask, render_template, request, url_for, redirect
 from supportClass import eventFormEntries
-from pymongo import MongoClient, errors
-
+from mongoDBSetup import mongodbConnectionCheck
 
 app = Flask(__name__)
 
-#MongoDB Setup
-def mongodbConnectionCheck():
-    try:
-        client = MongoClient("mongodb://localhost:27017")
-        eDatabase = client['EventDatabase']
-        eventCollection = eDatabase['Events']
-        return eventCollection
-    except errors.ConnectionFailure as e:
-        print("--Could not connect to server--" + str(e))
-
+#MongoDB setup
 eventCollection = mongodbConnectionCheck()
-
 
 #Rounting of Web Application!!!!!!
 @app.route('/',methods=['GET','POST'])
